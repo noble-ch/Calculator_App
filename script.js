@@ -1,4 +1,4 @@
-// Adding event listeners to all buttons with the class 'btn'
+// Adding event listeners to all buttons with the class 'btn'.
 for (let i = 0; i < document.querySelectorAll(".btn").length; i++) {
   document.querySelectorAll(".btn")[i].addEventListener("click", function () {
     let char = this.innerHTML;
@@ -6,7 +6,7 @@ for (let i = 0; i < document.querySelectorAll(".btn").length; i++) {
   });
 }
 
-// Function to display the result of the calculation
+// Function to display the result of the calculation.
 function displayAns() {
   let str = document.querySelector(".caculate").innerHTML;
   try {
@@ -17,7 +17,7 @@ function displayAns() {
   }
 }
 
-// Function to enter numbers and operators into the calculation string
+// Function to enter numbers and operators into the calculation string.
 function enterNumOpr(num) {
   if (
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 0].includes(parseInt(num)) ||
@@ -27,7 +27,7 @@ function enterNumOpr(num) {
   }
 }
 
-// Adding event listener to the backspace button
+// Adding event listener to the backspace button.
 document.querySelector(".b").addEventListener("click", function () {
   let caculateText = document.querySelector(".caculate").textContent;
   if (caculateText.length <= 1) {
@@ -44,7 +44,7 @@ document.querySelector(".c").addEventListener("click", function () {
   document.querySelector(".dis").innerHTML = "";
 });
 
-// Adding event listener to the equals button
+// Adding event listener to the equals button.
 document.querySelector("#eql").addEventListener("click", function () {
   let str = document.querySelector(".caculate").textContent;
   let detect = 0;
